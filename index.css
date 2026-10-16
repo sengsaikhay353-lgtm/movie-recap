@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-fallback: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', 'Padauk', 'Myanmar Text', var(--font-fallback);
+    background-color: #08080a;
+    color: #f4f4f5;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+.font-burmese {
+  font-family: 'Padauk', 'Myanmar Text', 'Pyidaungsu', sans-serif;
+}
+
+/* Custom styled red sliders */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #27272a;
+  border-radius: 9999px;
+  height: 6px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff1f3d;
+  box-shadow: 0 0 10px rgba(255, 31, 61, 0.7);
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+input[type=range]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #ff1f3d;
+  box-shadow: 0 0 10px rgba(255, 31, 61, 0.7);
+  cursor: pointer;
+  border: 2px solid #ffffff;
+}
+
+/* Red neon glow utilities */
+.glow-red {
+  box-shadow: 0 0 25px rgba(255, 31, 61, 0.45);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 12px rgba(255, 31, 61, 0.35);
+}
+
+.glow-red-inset {
+  box-shadow: inset 0 0 15px rgba(255, 31, 61, 0.25);
+}
