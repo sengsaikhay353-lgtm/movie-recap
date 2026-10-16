@@ -1,0 +1,6 @@
+{
+  "name": "TEAM ALPHA AI - Movie Recap Studio",
+  "description": "Personal movie recap video production studio with Burmese narration, smart scene trimming, blur box, subtitles, and real video export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
